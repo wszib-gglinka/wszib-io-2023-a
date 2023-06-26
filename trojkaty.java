@@ -19,8 +19,14 @@ class Trojkaty {
          if (a == b && b == c) {
              System.out.println("Trójkąt równoboczny"); 
          }
+ walidacja-wejscia-2
+         if (!czyIstniejeTrojkat(a, b, c)) {
+           System.out.println("Z podanych długości boków nie da się zbudować trójkąta");
+           System.exit(3);
+
          if (czyProstokatny(a, b, c)) {
            System.out.println("Trójkąt prostokątny");
+main
          }
     }
     /** Wyświetla ekran pomocy */
