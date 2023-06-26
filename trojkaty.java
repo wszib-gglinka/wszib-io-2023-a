@@ -13,7 +13,10 @@ class Trojkaty {
          if (a == b && b == c) {
              System.out.println("Trójkąt równoboczny"); 
          }
-         // TODO: tutaj trzeba bedzie dopisac inne przypadki
+         if (!czyIstniejeTrojkat(a, b, c)) {
+           System.out.println("Z podanych długości boków nie da się zbudować trójkąta");
+           System.exit(3);
+         }
     }
     /** Wyświetla ekran pomocy */
     
